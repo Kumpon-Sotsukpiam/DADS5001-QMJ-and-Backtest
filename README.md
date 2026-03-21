@@ -115,19 +115,38 @@ $$\text{Profitability} = z\left(\frac{1}{6}(z_{\text{GPOA}} + z_{\text{ROE}} + z
 | **GMAR** | $\frac{\text{Revenue} - \text{COGS}}{\text{Revenue}}$ | กำไรขั้นต้น / ยอดขาย เพื่อวัดอัตรากำไรขั้นต้นจากการดำเนินงาน |
 | **ACC** | $\frac{\text{Depreciation} - \Delta \text{Working Capital}}{\text{Total Assets}}$ | (ค่าเสื่อมราคา - การเปลี่ยนแปลงเงินทุนหมุนเวียน) / สินทรัพย์รวม โดยค่านี้ยิ่งต่ำยิ่งดี เพราะสะท้อนว่ากำไรที่เกิดขึ้นมาจากกระแสเงินสดจริงเป็นหลัก |
  
-
-![Profitability Score](assets/profitability_A_diverging.png)
-*Figure 1: ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Profitability (ROA, GPOA, ROE, GMAR และ Accruals) สำหรับกลุ่ม Quality, Middle และ Junk*
+<p align="center">
+  <img src="assets/profitability_A_diverging.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 1 :</b> ค่า rolling beta และ correlation ของพอร์ต Quality และ Junk เทียบกับ S&amp;P 500 ในแต่ละช่วงเวลา
+</p>
+<!-- ![Profitability Score](assets/profitability_A_diverging.png) -->
+<!-- *Figure 1: ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Profitability (ROA, GPOA, ROE, GMAR และ Accruals) สำหรับกลุ่ม Quality, Middle และ Junk* -->
 
 Quality portfolio มีความสามารถในการทำกำไรสูงกว่าอย่างมีนัยสำคัญในทุกตัวชี้วัดหลัก โดย ROA และ GPOA มีความแตกต่างเด่นชัดที่สุด ขณะที่ Accruals มีความสามารถในการแยกกลุ่มต่ำ สะท้อนว่าระดับของผลกำไรเป็นปัจจัยหลักในการกำหนดคุณภาพของบริษัทในโมเดลนี้
 
-![Profitability Score](assets/profitability_B_spread.png)
-*Figure 2: ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Profitability แต่ละตัว (ROA, GPOA, ROE, GMAR และ Accruals)*
+<p align="center">
+  <img src="assets/profitability_B_spread.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 2: </b>ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Profitability แต่ละตัว (ROA, GPOA, ROE, GMAR และ Accruals)
+</p>
+<!-- ![Profitability Score](assets/profitability_B_spread.png)
+*Figure 2: ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Profitability แต่ละตัว (ROA, GPOA, ROE, GMAR และ Accruals)* -->
 
 การจัดอันดับแสดงให้เห็นว่า ROA เป็นตัวแปรที่มีความสามารถในการแยกหุ้นคุณภาพสูงสุด รองลงมาคือ GPOA ซึ่งทั้งสองสะท้อนถึงประสิทธิภาพในการใช้สินทรัพย์เพื่อสร้างกำไร ขณะที่ Accruals มีค่าใกล้ศูนย์และไม่สามารถแยกกลุ่มได้อย่างชัดเจน จึงมีบทบาทรองเมื่อเทียบกับ profitability metrics
 
-![Profitability Score](assets/profitability_C_peryear.png)
-*Figure 3: ค่าเฉลี่ย Profitability score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread*
+
+<p align="center">
+  <img src="assets/profitability_C_peryear.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 3: </b>ค่าเฉลี่ย Profitability score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread
+</p>
+
+<!-- ![Profitability Score](assets/profitability_C_peryear.png)
+*Figure 3: ค่าเฉลี่ย Profitability score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread* -->
 
 ผลลัพธ์สะท้อนว่า Profitability factor มีความสม่ำเสมอในเชิงเวลา โดย Quality portfolio มีระดับผลกำไรสูงกว่า Junk อย่างต่อเนื่องในทุกปี และ Q–J Spread ยังคงเป็นบวกตลอดช่วงเวลา แม้จะมีความผันผวนในบางช่วง เช่น 2012–2015 ที่ spread อ่อนตัวลง ซึ่งสะท้อนความผันผวนตามสภาวะตลาด อย่างไรก็ตาม แนวโน้มโดยรวมยังยืนยันว่าความสามารถในการทำกำไรเป็นสัญญาณหลักที่มีเสถียรภาพในการแยกหุ้นคุณภาพในระยะยาว
 
@@ -148,19 +167,39 @@ $$\text{Safety} = z\left(\frac{1}{5}(z_{\text{BAB}} + z_{\text{LEV}} + z_{\text{
 | **Z-Score** (Altman) | Altman Z-Score | **ความเสี่ยงการล้มละลาย** (Altman Z-Score) ต่ำ ใช้วัดความเสี่ยงด้านการล้มละลายจากหลายมิติเช่น โครงสร้างสินทรัพย์ กำไร และประวัติการดำเนินงาน |
 | **EVOL** (Stability) | $\text{StdDev}(\text{ROE, past 60 qtr})$ | **ความผันผวนของกำไร** (ส่วนเบี่ยงเบนมาตรฐาน) ยิ่งต่ำยิ่งดี เพราะสะท้อนว่า บริษัทมีผลประกอบการที่เสถียรและคาดการณ์ได้ |
  
+<p align="center">
+  <img src="assets/safety_A_diverging.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 4: </b>ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Safety (Leverage และ Stability) สำหรับกลุ่ม Quality, Middle และ Junk*
+</p>
 
-![Safety Score](assets/safety_A_diverging.png)
-*Figure 4: ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Safety (Leverage และ Stability) สำหรับกลุ่ม Quality, Middle และ Junk*
+<!-- ![Safety Score](assets/safety_A_diverging.png)
+*Figure 4: ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Safety (Leverage และ Stability) สำหรับกลุ่ม Quality, Middle และ Junk* -->
 
 Quality portfolio มีลักษณะความเสี่ยงที่ดีกว่าอย่างมีนัยสำคัญ โดยมีภาระหนี้ต่ำกว่า (Leverage ที่ปรับทิศทางแล้ว) และความผันผวนของกำไรต่ำกว่า (Stability) เมื่อเทียบกับ Junk ซึ่งสะท้อนถึงความแข็งแกร่งของโครงสร้างทางการเงิน นอกจากนี้ความแตกต่างที่สูงในมิติ Leverage บ่งชี้ว่าการควบคุมภาระหนี้เป็นปัจจัยสำคัญในการแยกหุ้นคุณภาพในโมเดลนี้
 
-![Safety Score](assets/safety_B_spread.png)
-*Figure 5: ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Safety (Leverage และ Stability)*
+<p align="center">
+  <img src="assets/safety_B_spread.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 5: </b>ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Safety (Leverage และ Stability)
+</p>
+
+<!-- ![Safety Score](assets/safety_B_spread.png)
+*Figure 5: ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Safety (Leverage และ Stability)* -->
 
 Leverage เป็นตัวแปรหลักในการแยกหุ้นคุณภาพ โดยมีค่า Q–J Spread สูงที่สุดอย่างมีนัยสำคัญ สะท้อนว่าบริษัทที่มีภาระหนี้ต่ำมีแนวโน้มถูกจัดอยู่ในกลุ่ม Quality มากกว่า ขณะที่ Stability แม้มีบทบาทรองลงมา แต่ยังช่วยเสริมความสามารถของโมเดลในการระบุบริษัทที่มีผลประกอบการสม่ำเสมอ ซึ่งทั้งสองปัจจัยร่วมกันสะท้อนมิติด้านความเสี่ยงของ Quality factor
 
-![Safety Score](assets/safety_C_peryear.png)
-*Figure 6: ค่าเฉลี่ย Safety score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread*
+<p align="center">
+  <img src="assets/safety_C_peryear.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 6: </b>ค่าเฉลี่ย Safety score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread
+</p>
+
+<!-- ![Safety Score](assets/safety_C_peryear.png)
+*Figure 6: ค่าเฉลี่ย Safety score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread* -->
 
 Safety factor มีความสม่ำเสมอในเชิงสัญญาณ โดย Q–J Spread ยังคงเป็นบวกในทุกปี อย่างไรก็ตาม ระดับของ spread มีแนวโน้มอ่อนตัวลงในช่วงหลัง และมีความผันผวนในแต่ละปี สะท้อนว่าแม้ปัจจัยด้านความเสี่ยงยังสามารถแยกหุ้นได้อย่างต่อเนื่อง แต่ความแรงของสัญญาณไม่ได้คงที่ในทุกช่วงเวลา
 
@@ -193,19 +232,39 @@ $$\Delta\text{GMAR} = \frac{\text{GMAR}_{t} - \text{GMAR}_{t-5}}{\text{GMAR}_{t-
 | **ΔCFOA** | การเติบโตของกระแสเงินสด แสดงว่าบริษัทสร้างเงินสดจริงได้มากขึ้นหรือน้อยลง ซึ่งสำคัญมากสำหรับความยั่งยืน |
 | **ΔGMAR** | การเติบโตของกำไรขั้นต้น แสดงว่าบริษัทสามารถรักษากำไรขั้นต้นไว้หรือเพิ่มขึ้น |
 
+<p align="center">
+  <img src="assets/growth_A_diverging.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 7: </b>ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Growth (ΔROA, ΔGPOA, ΔGMAR และ ΔROE; 5-year change) สำหรับกลุ่ม Quality, Middle และ Junk
+</p>
 
-![growth Score](assets/growth_A_diverging.png)
-*Figure 7: ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Growth (ΔROA, ΔGPOA, ΔGMAR และ ΔROE; 5-year change) สำหรับกลุ่ม Quality, Middle และ Junk*
+<!-- ![growth Score](assets/growth_A_diverging.png)
+*Figure 7: ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Growth (ΔROA, ΔGPOA, ΔGMAR และ ΔROE; 5-year change) สำหรับกลุ่ม Quality, Middle และ Junk* -->
 
 Quality portfolio ไม่เพียงมีผลประกอบการที่ดีในปัจจุบัน แต่ยังมีแนวโน้มการเติบโตที่แข็งแกร่งกว่าในระยะยาว โดยตัวชี้วัดการเปลี่ยนแปลง เช่น ΔROA และ ΔGPOA แสดงให้เห็นความแตกต่างที่ชัดเจนระหว่าง Quality และ Junk ขณะที่ค่าเฉลี่ยของ Middle อยู่ใกล้ศูนย์ สะท้อนว่า Growth มีบทบาทเป็นปัจจัยเสริม (secondary factor) มากกว่าตัวขับเคลื่อนหลัก เมื่อเทียบกับ Profitability และ Safety
 
-![growth Score](assets/growth_B_spread.png)
-*Figure 8: ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Growth แต่ละตัว (ΔROA, ΔGPOA, ΔGMAR และ ΔROE)*
+<p align="center">
+  <img src="assets/growth_B_spread.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 8: </b>ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Growth แต่ละตัว (ΔROA, ΔGPOA, ΔGMAR และ ΔROE)
+</p>
+
+<!-- ![growth Score](assets/growth_B_spread.png)
+*Figure 8: ค่า Q–J Spread (Quality − Junk) ของตัวชี้วัดด้าน Growth แต่ละตัว (ΔROA, ΔGPOA, ΔGMAR และ ΔROE)* -->
 
 ΔROA เป็นตัวแปรที่มีพลังในการแยกหุ้นคุณภาพสูงที่สุดในกลุ่ม Growth สะท้อนถึงความสำคัญของการปรับตัวดีขึ้นของผลตอบแทนต่อสินทรัพย์ ขณะที่ตัวชี้วัดอื่น เช่น ΔGPOA และ ΔGMAR ยังมีบทบาทสนับสนุนในการจับการเติบโตของประสิทธิภาพการดำเนินงาน แม้ว่าโดยรวมแล้วมิติด้าน Growth จะมีอิทธิพลรองลงมาจาก Profitability และ Safety แต่ยังช่วยเสริมความสมบูรณ์ของโมเดลในการประเมินคุณภาพหุ้นในระยะยาว
 
-![growth Score](assets/growth_C_peryear.png)
-*Figure 9: ค่าเฉลี่ย Growth score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread*
+<p align="center">
+  <img src="assets/growth_C_peryear.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 9: </b>ค่าเฉลี่ย Growth score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread
+</p>
+
+<!-- ![growth Score](assets/growth_C_peryear.png)
+*Figure 9: ค่าเฉลี่ย Growth score ของกลุ่ม Quality, Middle และ Junk ในแต่ละปี พร้อม Q–J Spread* -->
 
 Growth factor แสดงให้เห็นถึงความสามารถในการแยกหุ้นอย่างต่อเนื่อง โดย Quality portfolio มีคะแนนสูงกว่า Junk ในทุกปี และ Q–J Spread ยังคงเป็นบวกตลอดช่วงเวลา อย่างไรก็ตาม ระดับของ spread มีความผันผวนและแสดงแนวโน้มเพิ่มขึ้นในช่วงหลัง โดยเฉพาะหลังปี 2020 ซึ่งสะท้อนถึงการเสริมความแข็งแกร่งของสัญญาณด้านการเติบโตในบางช่วงของวัฏจักรตลาด
 
@@ -240,84 +299,212 @@ $$\text{Percentile}_{i,t} = \frac{\text{Rank}(\text{QMJ Score}_i) - 1}{N - 1} \t
 
 ## QMJ Score Distribution & Portfolio Assignment
 ### QMJ Score Analysis 
-![growth Score](assets/qmj_score_distribution.png)
-*Figure 10: การกระจายตัวของ QMJ Score ในช่วง FY2023–2025 พร้อมเส้น normal fit และจุดตัดสำหรับการแบ่งกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%)*
+
+<p align="center">
+  <img src="assets/qmj_score_distribution.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 10: </b>การกระจายตัวของ QMJ Score ในช่วง FY2023–2025 พร้อมเส้น normal fit และจุดตัดสำหรับการแบ่งกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%)
+</p>
+
+<!-- ![growth Score](assets/qmj_score_distribution.png)
+*Figure 10: การกระจายตัวของ QMJ Score ในช่วง FY2023–2025 พร้อมเส้น normal fit และจุดตัดสำหรับการแบ่งกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%)* -->
 
 การกระจายตัวของ QMJ Score ในช่วง FY2023–2025 แสดงให้เห็นว่าคะแนนมีลักษณะใกล้เคียงการแจกแจงแบบปกติ (normal distribution) โดยมีการแบ่งกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%) ในทุกปีอย่างสม่ำเสมอ โดย threshold ของ Quality อยู่ในช่วงค่าบวก และ Junk อยู่ในช่วงค่าลบ
 
-![growth Score](assets/qmj_components_boxplot.png)
-*Figure 11: การกระจายตัวของคะแนน QMJ components (Profit, Safety, Growth) สำหรับกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%) แสดงด้วย boxplot และ outliers*
+<p align="center">
+  <img src="assets/qmj_components_boxplot.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 11: </b>การกระจายตัวของคะแนน QMJ components (Profit, Safety, Growth) สำหรับกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%) แสดงด้วย boxplot และ outliers
+</p>
+
+<!-- ![growth Score](assets/qmj_components_boxplot.png)
+*Figure 11: การกระจายตัวของคะแนน QMJ components (Profit, Safety, Growth) สำหรับกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%) แสดงด้วย boxplot และ outliers* -->
 
 การกระจายตัวของคะแนน QMJ components (Profit, Safety, Growth) แสดงให้เห็นว่า Quality มีค่าโดยรวมอยู่ฝั่งบวก ขณะที่ Junk อยู่ฝั่งลบ และสามารถแยกกลุ่มได้ในทุกมิติ โดยเฉพาะด้าน Safety ที่มีความแตกต่างชัดเจนที่สุด อย่างไรก็ตามยังมีบางช่วงที่ค่าของทั้งสองกลุ่มทับซ้อนกันใกล้ศูนย์ แสดงว่าการแยกกลุ่มไม่ได้สมบูรณ์ในทุกกรณี นอกจากนี้ทั้ง Quality และ Junk ต่างก็มีลักษณะหาง (tails) และ outliers ซึ่งเป็นเรื่องปกติของข้อมูลการเงิน ซึ่งเกิดจากความแตกต่างของธุรกิจและเหตุการณ์พิเศษบางช่วง และมีระดับใกล้เคียงกันในทั้งสองกลุ่ม สะท้อนว่าความเสี่ยงของค่าที่เบี่ยงเบนอย่างรุนแรงสามารถเกิดขึ้นได้ในทั้งสองฝั่ง
 
-![growth Score](assets/qmj_mean_component_bar.png)
-*Figure 12: ค่าเฉลี่ยของคะแนน QMJ components (Profit, Safety, Growth) สำหรับกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%) พร้อมค่า gap ระหว่างสองกลุ่ม*
+<p align="center">
+  <img src="assets/qmj_mean_component_bar.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 12: </b>ค่าเฉลี่ยของคะแนน QMJ components (Profit, Safety, Growth) สำหรับกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%) พร้อมค่า gap ระหว่างสองกลุ่ม
+</p>
+
+<!-- ![growth Score](assets/qmj_mean_component_bar.png)
+*Figure 12: ค่าเฉลี่ยของคะแนน QMJ components (Profit, Safety, Growth) สำหรับกลุ่ม Quality (Top 30%) และ Junk (Bottom 30%) พร้อมค่า gap ระหว่างสองกลุ่ม* -->
 
 ค่าเฉลี่ยของคะแนน QMJ components ระหว่าง Quality และ Junk แสดงให้เห็นว่ากลุ่ม Quality มีค่าคะแนนสูงกว่ากลุ่ม Junk ในทุกมิติ โดย Safety มีความแตกต่างของค่าเฉลี่ยมากที่สุด รองลงมาคือ Growth และ Profit ซึ่งสะท้อนถึงความสามารถของแต่ละปัจจัยในการแยกกลุ่มหุ้นได้อย่างชัดเจน
 
-![growth Score](assets/qmj_factor_correlation_heatmap.png)
-*Figure 13: Correlation heatmap ของ QMJ factors (z-scores) แสดงค่าสหสัมพันธ์ระหว่างตัวชี้วัดในแต่ละมิติ (Profitability, Safety และ Growth)*
+<p align="center">
+  <img src="assets/qmj_factor_correlation_heatmap.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 13: </b>Correlation heatmap ของ QMJ factors (z-scores) แสดงค่าสหสัมพันธ์ระหว่างตัวชี้วัดในแต่ละมิติ (Profitability, Safety และ Growth)
+</p>
+
+<!-- ![growth Score](assets/qmj_factor_correlation_heatmap.png)
+*Figure 13: Correlation heatmap ของ QMJ factors (z-scores) แสดงค่าสหสัมพันธ์ระหว่างตัวชี้วัดในแต่ละมิติ (Profitability, Safety และ Growth)* -->
 
 Correlation heatmap ของ QMJ factors (z-scores) แสดงให้เห็นว่าความสัมพันธ์ระหว่างตัวชี้วัดส่วนใหญ่อยู่ในระดับต่ำถึงปานกลาง แม้ว่าจะมีบางคู่ที่มีความสัมพันธ์ค่อนข้างสูงในบางมิติ แต่โดยรวมแล้ว สะท้อนว่าแต่ละ factor ให้ข้อมูลที่แตกต่างกัน (diversified signals) และไม่ซ้ำซ้อนกันมากนัก ซึ่งช่วยเพิ่มประสิทธิภาพของ composite model ในการจับสัญญาณคุณภาพหุ้นได้ดียิ่งขึ้น
 
-![growth Score](assets/qmj_score_trend_with_spreads.png)
-*Figure 14: แนวโน้มค่าเฉลี่ย QMJ Score ของกลุ่ม Quality และ Junk พร้อมค่า Q–J Spreadของแต่ละ component (Profit, Safety และ Growth) ในแต่ละปี*
+<p align="center">
+  <img src="assets/qmj_score_trend_with_spreads.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 14: </b>แนวโน้มค่าเฉลี่ย QMJ Score ของกลุ่ม Quality และ Junk พร้อมค่า Q–J Spreadของแต่ละ component (Profit, Safety และ Growth) ในแต่ละปี
+</p>
+
+<!-- ![growth Score](assets/qmj_score_trend_with_spreads.png)
+*Figure 14: แนวโน้มค่าเฉลี่ย QMJ Score ของกลุ่ม Quality และ Junk พร้อมค่า Q–J Spreadของแต่ละ component (Profit, Safety และ Growth) ในแต่ละปี* -->
 
 QMJ Score และ component spreads แสดงแนวโน้มที่สม่ำเสมอ โดย Quality มีค่าคะแนนสูงกว่า Junk ในทุกช่วงเวลา และค่า Q–J Spread ของแต่ละ component ยังคงเป็นบวกอย่างต่อเนื่อง แม้จะมีความผันผวนในบางปี ซึ่งสะท้อนถึงความสามารถของโมเดลในการแยกหุ้นคุณภาพได้อย่างต่อเนื่องตลอดช่วงเวลา
 
 ## Stock-Level Quality
-![qmj_top_quality_junk_heatmap](assets/qmj_top_quality_junk_heatmap.png)
-*Figure 15: Heatmap ของ QMJ Score สำหรับหุ้นที่อยู่ในกลุ่ม Quality และ Junk บ่อยในช่วงปี 2006–2025 โดยแสดงค่า QMJ Score และ percentile rank ในแต่ละปี พร้อมค่าเฉลี่ย (Avg) ตลอดช่วงเวลา*
+
+<p align="center">
+  <img src="assets/qmj_top_quality_junk_heatmap.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 15: </b>Heatmap ของ QMJ Score สำหรับหุ้นที่อยู่ในกลุ่ม Quality และ Junk บ่อยในช่วงปี 2006–2025 โดยแสดงค่า QMJ Score และ percentile rank ในแต่ละปี พร้อมค่าเฉลี่ย (Avg) ตลอดช่วงเวลา
+</p>
+
+<!-- ![qmj_top_quality_junk_heatmap](assets/qmj_top_quality_junk_heatmap.png)
+*Figure 15: Heatmap ของ QMJ Score สำหรับหุ้นที่อยู่ในกลุ่ม Quality และ Junk บ่อยในช่วงปี 2006–2025 โดยแสดงค่า QMJ Score และ percentile rank ในแต่ละปี พร้อมค่าเฉลี่ย (Avg) ตลอดช่วงเวลา* -->
 
 Heatmap ของ QMJ Score สำหรับหุ้นที่อยู่ในกลุ่ม Quality และ Junk บ่อยในช่วงปี 2006–2025 แสดงให้เห็นว่าหุ้นในกลุ่ม Quality โดยรวมมีค่า QMJ Score เป็นบวกและอยู่ใน percentile ที่สูง ขณะที่หุ้นในกลุ่ม Junk มีค่าเป็นลบและอยู่ใน percentile ที่ต่ำในหลายช่วงเวลา แม้จะมีบางปีที่ค่าของแต่ละหุ้นเปลี่ยนแปลงไปจากแนวโน้มเดิม แต่ค่าเฉลี่ย (Avg) ยังคงสะท้อนความแตกต่างระหว่างสองกลุ่มได้อย่างชัดเจน
 
 ## Sector-Level Quality Dynamics
+<p align="center">
+  <img src="assets/sector_scatter.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 16: </b> การกระจายตัวของแต่ละ sector บนแกน Profitability และ Safety โดยขนาดของจุดแสดงค่า Growth score และมีการจัดอันดับตามค่าเฉลี่ย Profit + Safety
+</p>
 
-![sector_scatter](assets/sector_scatter.png)
-*Figure 16: การกระจายตัวของแต่ละ sector บนแกน Profitability และ Safety โดยขนาดของจุดแสดงค่า Growth score และมีการจัดอันดับตามค่าเฉลี่ย Profit + Safety*
+<!-- ![sector_scatter](assets/sector_scatter.png)
+*Figure 16: การกระจายตัวของแต่ละ sector บนแกน Profitability และ Safety โดยขนาดของจุดแสดงค่า Growth score และมีการจัดอันดับตามค่าเฉลี่ย Profit + Safety* -->
 
 การกระจายตัวของแต่ละ sector แสดงให้เห็นว่ามีความแตกต่างในด้าน Profitability และ Safety โดย Technology อยู่ในกลุ่มที่มีค่าทั้งสองมิติสูง ขณะที่ Healthcare มีค่าบวกในทั้งสองด้านเช่นกัน ส่วน Utilities และ Real Estate อยู่ในฝั่งที่มีค่าต่ำในทั้งสองมิติ นอกจากนี้บาง sector เช่น Energy และ Financial Services มีลักษณะค่าที่ไม่สมดุลระหว่างสองแกน สะท้อนถึงความแตกต่างของโครงสร้างและลักษณะธุรกิจในแต่ละอุตสาหกรรม
 
-![sector_scatter](assets/sector_component_heatmap.png)
-*Figure 17: ค่าเฉลี่ยของ Profitability, Safety และ Growth ในแต่ละ sector พร้อมอันดับภายในแต่ละมิติ และค่า QMJ รวม (Total QMJ)*
+<p align="center">
+  <img src="assets/sector_component_heatmap.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 17: </b> ค่าเฉลี่ยของ Profitability, Safety และ Growth ในแต่ละ sector พร้อมอันดับภายในแต่ละมิติ และค่า QMJ รวม (Total QMJ)
+</p>
+
+<!-- ![sector_scatter](assets/sector_component_heatmap.png)
+*Figure 17: ค่าเฉลี่ยของ Profitability, Safety และ Growth ในแต่ละ sector พร้อมอันดับภายในแต่ละมิติ และค่า QMJ รวม (Total QMJ)* -->
 
 แต่ละ sector มีองค์ประกอบของคะแนนที่แตกต่างกัน โดย Technology มีค่าค่อนข้างสูงทั้งด้าน Profitability และ Safety ขณะที่บาง sector เช่น Energy และ Financial Services มีคะแนน Safety สูงแต่ Profitability ต่ำ นอกจากนี้ยังพบว่าแต่ละ sector มีจุดเด่นในมิติที่ต่างกัน เช่น Utilities ที่มี Growth สูงแต่ Profit ต่ำ หรือ Healthcare ที่มี Profit สูงแต่ Growth ต่ำ ซึ่งแสดงให้เห็นว่าคุณภาพของแต่ละอุตสาหกรรมเกิดจากการผสมผสานของหลายปัจจัย ไม่ได้ขึ้นอยู่กับมิติใดมิติหนึ่งเพียงอย่างเดียว
 
-![sector_qmj_heatmap](assets/sector_qmj_heatmap.png)
-*Figure 18: ค่าเฉลี่ย QMJ Score ของแต่ละ sector ในแต่ละปี โดยกล่องสีเขียวแสดง sector ที่มีค่าสูงสุด และสีแดงแสดง sector ที่มีค่าต่ำสุดในแต่ละปี*
+<p align="center">
+  <img src="assets/sector_qmj_heatmap.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 18: </b> ค่าเฉลี่ย QMJ Score ของแต่ละ sector ในแต่ละปี โดยกล่องสีเขียวแสดง sector ที่มีค่าสูงสุด และสีแดงแสดง sector ที่มีค่าต่ำสุดในแต่ละปี
+</p>
+
+<!-- ![sector_qmj_heatmap](assets/sector_qmj_heatmap.png)
+*Figure 18: ค่าเฉลี่ย QMJ Score ของแต่ละ sector ในแต่ละปี โดยกล่องสีเขียวแสดง sector ที่มีค่าสูงสุด และสีแดงแสดง sector ที่มีค่าต่ำสุดในแต่ละปี* -->
 
 ผลลัพธ์แสดงให้เห็นว่าคะแนน QMJ ของแต่ละ sector มีการเปลี่ยนแปลงตามช่วงเวลา โดยมีการสลับกันเป็น sector ที่มีคะแนนสูงสุดและต่ำสุดในแต่ละปี ซึ่งสะท้อนถึงความแตกต่างของผลการดำเนินงานในแต่ละช่วง โดยบาง sector เช่น Energy มีความผันผวนสูง โดยมีทั้งช่วงที่มีคะแนนสูงและต่ำอย่างชัดเจน ขณะที่ Technology และ Healthcare โดยรวมมีค่าคะแนนอยู่ในระดับบวกในหลายช่วงเวลา แม้จะมีบางปีที่ค่าลดลง
 
-![quality_pct_heatmap](assets/quality_pct_heatmap.png)
-*Figure 19: สัดส่วนของหุ้นที่อยู่ในกลุ่ม Quality (Top 30%) ในแต่ละ sector ต่อปี โดยสัญลักษณ์ ▲ แสดงค่าที่สูงกว่า baseline (30%) และ ▽ แสดงค่าที่ต่ำกว่า baseline*
+<p align="center">
+  <img src="assets/quality_pct_heatmap.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 19: </b> สัดส่วนของหุ้นที่อยู่ในกลุ่ม Quality (Top 30%) ในแต่ละ sector ต่อปี โดยสัญลักษณ์ ▲ แสดงค่าที่สูงกว่า baseline (30%) และ ▽ แสดงค่าที่ต่ำกว่า baseline
+</p>
+
+<!-- ![quality_pct_heatmap](assets/quality_pct_heatmap.png)
+*Figure 19: สัดส่วนของหุ้นที่อยู่ในกลุ่ม Quality (Top 30%) ในแต่ละ sector ต่อปี โดยสัญลักษณ์ ▲ แสดงค่าที่สูงกว่า baseline (30%) และ ▽ แสดงค่าที่ต่ำกว่า baseline* -->
 
 สัดส่วนของหุ้นที่อยู่ในกลุ่ม Quality แตกต่างกันในแต่ละ sector และมีการเปลี่ยนแปลงตามช่วงเวลา โดย Technology และ Healthcare มีสัดส่วนหุ้นคุณภาพสูงในหลายปี ขณะที่บาง sector เช่น Financial Services และ Energy มีความผันผวนสูง โดยมีทั้งช่วงที่สัดส่วนสูงและต่ำกว่าค่า baseline อย่างชัดเจน นอกจากนี้ sector อย่าง Utilities และ Real Estate มักมีสัดส่วนต่ำกว่า baseline ในหลายช่วงเวลา ซึ่งสะท้อนถึงความแตกต่างของลักษณะคุณภาพระหว่างอุตสาหกรรม
 
-![junk_pct_heatmap](assets/junk_pct_heatmap.png)
-*Figure 20: สัดส่วนของหุ้นที่อยู่ในกลุ่ม Junk (Bottom 30%) ในแต่ละ sector ต่อปี โดยสัญลักษณ์ ▲ แสดงค่าที่สูงกว่า baseline (30%) และ ▽ แสดงค่าที่ต่ำกว่า baseline*
+<p align="center">
+  <img src="assets/junk_pct_heatmap.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 20: </b> สัดส่วนของหุ้นที่อยู่ในกลุ่ม Junk (Bottom 30%) ในแต่ละ sector ต่อปี โดยสัญลักษณ์ ▲ แสดงค่าที่สูงกว่า baseline (30%) และ ▽ แสดงค่าที่ต่ำกว่า baseline
+</p>
+
+<!-- ![junk_pct_heatmap](assets/junk_pct_heatmap.png)
+*Figure 20: สัดส่วนของหุ้นที่อยู่ในกลุ่ม Junk (Bottom 30%) ในแต่ละ sector ต่อปี โดยสัญลักษณ์ ▲ แสดงค่าที่สูงกว่า baseline (30%) และ ▽ แสดงค่าที่ต่ำกว่า baseline* -->
 
 สัดส่วนของหุ้นที่อยู่ในกลุ่ม Junk แตกต่างกันในแต่ละ sector และมีการเปลี่ยนแปลงตามช่วงเวลา โดย Utilities และ Real Estate มีสัดส่วนหุ้น Junk อยู่ในระดับสูงในหลายปี ขณะที่บาง sector เช่น Energy และ Financial Services มีความผันผวนมาก โดยมีทั้งช่วงที่สัดส่วนสูงและต่ำกว่าค่า baseline อย่างชัดเจน นอกจากนี้ Technology มักมีสัดส่วนหุ้น Junk ต่ำกว่าค่า baseline ในหลายช่วงเวลา ซึ่งสะท้อนถึงความแตกต่างของลักษณะคุณภาพระหว่างอุตสาหกรรม
 
 ##  Backtesting Results
 ###  Portfolio Performance 
-![backtest_equity_curve_crises](assets/backtest_equity_curve_crises.png)
-*Figure 21: ผลการทดสอบพอร์ต Quality เทียบกับ Junk และ S&P 500 แสดง cumulative equity curve, long–short performance (Quality − Junk) และ drawdown ตลอดช่วงเวลา*
+<p align="center">
+  <img src="assets/backtest_equity_curve_crises.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 21: </b> ผลการทดสอบพอร์ต Quality เทียบกับ Junk และ S&P 500 แสดง cumulative equity curve, long–short performance (Quality − Junk) และ drawdown ตลอดช่วงเวลา
+</p>
+
+<!-- ![backtest_equity_curve_crises](assets/backtest_equity_curve_crises.png)
+*Figure 21: ผลการทดสอบพอร์ต Quality เทียบกับ Junk และ S&P 500 แสดง cumulative equity curve, long–short performance (Quality − Junk) และ drawdown ตลอดช่วงเวลา* -->
 
 ผลลัพธ์จากการ backtest แสดงให้เห็นว่า Quality portfolio ให้ผลตอบแทนสะสมสูงกว่า Junk และใกล้เคียงหรือสูงกว่า S&P 500 ในช่วงเวลาส่วนใหญ่ โดยมีค่า Sharpe ratio ที่สูงกว่าและ drawdown ที่ตื้นกว่าเล็กน้อย ขณะที่กลยุทธ์ long–short (Quality − Junk) มีแนวโน้มเป็นบวกในระยะยาว แม้จะมีช่วงผันผวนหรือการชะลอตัวในบางช่วงเวลา เช่น ในช่วงวิกฤตตลาด อย่างไรก็ตามโดยรวมแล้วผลลัพธ์สะท้อนถึงศักยภาพของ Quality factor ในการสร้างผลตอบแทนที่เหนือกว่าเมื่อพิจารณาในระยะยาว
 
-![underwater_plot](assets/underwater_plot.png)
-*Figure 22: Underwater plot แสดง drawdown ของพอร์ต Quality, Junk และ S&P 500 พร้อมตัวชี้วัด MDD และระยะเวลาอยู่ใต้น้ำ (days underwater) ตลอดช่วงเวลา*
+<p align="center">
+  <img src="assets/sector_composition_quality.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 22: </b> สัดส่วนของแต่ละ sector ในพอร์ต Quality ในแต่ละปี พร้อมจำนวนหุ้นในพอร์ต (number of holdings)
+</p>
+
+<!-- ![sector_composition_quality](assets/sector_composition_quality.png)
+*Figure 22: สัดส่วนของแต่ละ sector ในพอร์ต Quality ในแต่ละปี พร้อมจำนวนหุ้นในพอร์ต (number of holdings)* -->
+
+<p align="center">
+  <img src="assets/sector_composition_junk.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 23: </b> สัดส่วนของแต่ละ sector ในพอร์ต Junk ในแต่ละปี พร้อมจำนวนหุ้นในพอร์ต (number of holdings)
+</p>
+
+<!-- ![sector_composition_junk](assets/sector_composition_junk.png)
+*Figure 23: สัดส่วนของแต่ละ sector ในพอร์ต Junk ในแต่ละปี พร้อมจำนวนหุ้นในพอร์ต (number of holdings)* -->
+
+ผลลัพธ์แสดงให้เห็นว่าทั้งพอร์ต Quality และ Junk มีการกระจายการลงทุนในหลาย sector โดยไม่มีการกระจุกตัวในอุตสาหกรรมใดอย่างรุนแรง อย่างไรก็ตามพอร์ต Quality มีลักษณะการกระจายที่เปลี่ยนแปลงไปตามเวลา โดย sector ที่มีสัดส่วนสูงสุดไม่ได้คงที่ในแต่ละปี ขณะที่พอร์ต Junk มีรูปแบบที่สม่ำเสมอกว่า โดยมักมี Consumer Cyclical และ Industrials อยู่ในกลุ่มที่มีสัดส่วนสูงในหลายช่วงเวลา ซึ่งสะท้อนว่าความแตกต่างของพอร์ตไม่ได้เกิดจากการกระจุกตัวของ sector แต่เกิดจากโครงสร้างของ sector composition และการคัดเลือกหุ้นภายในแต่ละอุตสาหกรรมเป็นหลัก
+
+<p align="center">
+  <img src="assets/underwater_plot.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 24: </b> Underwater plot แสดง drawdown ของพอร์ต Quality, Junk และ S&P 500 พร้อมตัวชี้วัด MDD และระยะเวลาอยู่ใต้น้ำ (days underwater) ตลอดช่วงเวลา
+</p>
+
+<!-- ![underwater_plot](assets/underwater_plot.png)
+*Figure 24: Underwater plot แสดง drawdown ของพอร์ต Quality, Junk และ S&P 500 พร้อมตัวชี้วัด MDD และระยะเวลาอยู่ใต้น้ำ (days underwater) ตลอดช่วงเวลา* -->
 
 ผลลัพธ์แสดงให้เห็นว่า Quality portfolio มี drawdown ที่ตื้นกว่า Junk และใช้เวลาฟื้นตัวสั้นกว่าในบางช่วงเวลา โดยค่า maximum drawdown (MDD) ต่ำกว่า และระยะเวลาการฟื้นตัวสั้นกว่าเมื่อเทียบกับ Junk ขณะที่ระยะเวลาอยู่ใต้น้ำโดยรวมอยู่ในระดับใกล้เคียงกับตลาด เมื่อพิจารณาในช่วงวิกฤตสำคัญ Quality มักมีการปรับตัวลดลงในระดับที่ใกล้เคียงกับตลาด แต่โดยรวมมีแนวโน้มฟื้นตัวได้เร็วกว่าในบางช่วง ซึ่งสะท้อนถึงลักษณะความเสี่ยงที่แตกต่างกันระหว่างพอร์ต
 
-![annual_return](assets/annual_return.png)
-*Figure 23: ผลตอบแทนรายปีของพอร์ต Quality, Junk และ S&P 500 พร้อมค่า excess return ของ Quality เทียบกับตลาดในแต่ละปี*
+<p align="center">
+  <img src="assets/annual_return.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 25: </b> ลตอบแทนรายปีของพอร์ต Quality, Junk และ S&P 500 พร้อมค่า excess return ของ Quality เทียบกับตลาดในแต่ละปี*
+</p>
+
+<!-- ![annual_return](assets/annual_return.png)
+*Figure 25: ผลตอบแทนรายปีของพอร์ต Quality, Junk และ S&P 500 พร้อมค่า excess return ของ Quality เทียบกับตลาดในแต่ละปี* -->
 
 ผลตอบแทนรายปีแสดงให้เห็นว่า Quality portfolio สามารถ outperform ตลาดในหลายปี โดยเฉพาะในบางช่วงหลังภาวะตลาดปรับตัวลดลง อย่างไรก็ตามยังมีบางปีที่ผลตอบแทนต่ำกว่าตลาด ซึ่งสะท้อนถึงความแปรผันของผลลัพธ์ตามสภาวะตลาด โดยรวมแล้วผลลัพธ์ชี้ให้เห็นว่า Quality factor มีแนวโน้มสร้างผลตอบแทนที่ดีในระยะยาว แม้จะมีความผันผวนในระยะสั้น
 
 ### Risk Characteristics 
-![rolling_beta](assets/rolling_beta.png)
-*Figure 24: ค่า rolling beta และ correlation ของพอร์ต Quality และ Junk เทียบกับ S&P 500 ในแต่ละช่วงเวลา*
+<p align="center">
+  <img src="assets/rolling_beta.png" width="800"/>
+</p>
+<p align="center">
+  <b>Figure 26: </b> ค่า rolling beta และ correlation ของพอร์ต Quality และ Junk เทียบกับ S&P 500 ในแต่ละช่วงเวลา
+</p>
+
+<!-- ![rolling_beta](assets/rolling_beta.png)
+*Figure 26: ค่า rolling beta และ correlation ของพอร์ต Quality และ Junk เทียบกับ S&P 500 ในแต่ละช่วงเวลา* -->
 
 ผลลัพธ์แสดงให้เห็นว่า Quality portfolio มีค่า beta ที่โดยรวมต่ำกว่า Junk ในหลายช่วงเวลา แม้จะมีบางช่วงที่ค่าทั้งสองใกล้เคียงกัน ขณะที่ correlation กับตลาดยังคงอยู่ในระดับสูงสำหรับทั้งสองพอร์ต ซึ่งสะท้อนว่าผลตอบแทนของ Quality ยังคงเคลื่อนไหวไปในทิศทางเดียวกับตลาด โดยไม่ได้เกิดจากการลดการสัมผัสกับตลาดอย่างมีนัยสำคัญ นอกจากนี้ในช่วงหลังพบว่า beta ของทั้งสองพอร์ตมีแนวโน้มลดลง ซึ่งอาจสะท้อนถึงการเปลี่ยนแปลงของสภาวะตลาดในช่วงเวลาดังกล่าว
 
