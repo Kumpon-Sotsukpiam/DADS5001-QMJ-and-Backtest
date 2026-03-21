@@ -1,5 +1,75 @@
 
+# Do Fundamentals Matter? Testing Whether Financial Quality Predicts Stock Performance in the S&P 500
+ 
+## ✅ Data Pipeline
+ 
+- [x] Financial Data
+- [x] Price Data (daily adjusted close)
+- [x] S&P 500 Historical Components
+ 
+---
+ 
+## Quality Score Calculation
+ 
+### Profitability
+- [x] GPOA
+- [x] ROE
+- [x] ROA
+- [x] GMAR
+- [x] ACC
+- [ ] CFOA
+ 
+**Status: 5/6 (CFOA not implementing)**
+ 
+### Safety
+- [x] LEV (Leverage)
+- [x] EVOL (Stability)
+- [ ] BAB (Beta)
+- [ ] O-Score (Ohlson)
+- [ ] Z-Score (Altman)
+ 
+**Status: 2/5 (BAB, O-Score, Z-Score not implementing)**
+ 
+### Growth
+- [x] ΔGPOA
+- [x] ΔROE
+- [x] ΔROA
+- [x] ΔGMAR
+- [ ] ΔCFOA
+ 
+**Status: 4/5 (ΔCFOA not implementing)**
 
+
+##  Backtesting Framework
+ 
+### Core Backtesting Engine
+ 
+- [x] Portfolio Construction & Rebalancing
+- [x] Return & NAV Calculation
+- [x] Trading Fees & Slippage
+ 
+---
+ 
+### ✅ Risk Metrics
+ 
+- [x] CAGR, Volatility, Sharpe, Sortino, Calmar, MDD, Win Rate
+ 
+---
+ 
+### ✅ Strategy Implementations
+ 
+- [x] Equal Weight
+- [x] Rank-Based
+- [x] Top3
+- [x] Top3Rank
+- [x] Top50
+- [x] AbsMom (Absolute Momentum)
+- [x] DualMom (Dual Momentum)
+- [x] InvVol (Inverse Volatility)
+- [x] AAA (All-Around Amazing)
+ 
+---
+ 
 ## Introduction
 
 ปัจจัยพื้นฐานยังคงเป็นกุญแจสำคัญในการสร้างผลตอบแทนจริงหรือไม่? การค้นหาคำตอบนี้เริ่มต้นขึ้นผ่านกลยุทธ์ Quality Minus Junk (QMJ) ในตลาดหุ้นสหรัฐฯ (S&P 500) โดยใช้ระบบการลงทุนเชิงปริมาณคัดเกรดหุ้นด้วยข้อมูลงบการเงินย้อนหลัง พร้อมทดสอบผ่านแบบจำลองการลงทุน (Backtest)เพื่อทดสอบความสม่ำเสมอของพอร์ตโฟลิโอหุ้นคุณภาพ และประเมินว่า fundamental quality สามารถอธิบายผลตอบแทนระยะยาวได้หรือไม่
