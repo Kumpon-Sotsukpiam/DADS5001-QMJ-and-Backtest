@@ -172,13 +172,27 @@ Safety factor มีความสม่ำเสมอในเชิงเว
 
 $$\text{Growth} = z\left(\frac{1}{5}(z_{\Delta \text{GPOA}} + z_{\Delta \text{ROE}} + z_{\Delta \text{ROA}} + z_{\Delta \text{CFOA}} + z_{\Delta \text{GMAR}})\right)$$
 
-| ตัวชี้วัด | สูตร | ความหมาย |
-|----------|------|---------|
-| **ΔGPOA** | $\frac{\text{GPOA}_{t} - \text{GPOA}_{t-5}}{\text{GPOA}_{t-5}}$ | การเติบโตของ Gross Profit Margin ใน 5 ปี |
-| **ΔROE** | $\frac{\text{ROE}_{t} - \text{ROE}_{t-5}}{\text{ROE}_{t-5}}$ | การเติบโตของผลตอบแทนทุน |
-| **ΔROA** | $\frac{\text{ROA}_{t} - \text{ROA}_{t-5}}{\text{ROA}_{t-5}}$ | การเติบโตของผลตอบแทนสินทรัพย์ |
-| **ΔCFOA** | $\frac{\text{CFOA}_{t} - \text{CFOA}_{t-5}}{\text{CFOA}_{t-5}}$ | การเติบโตของกระแสเงินสด |
-| **ΔGMAR** | $\frac{\text{GMAR}_{t} - \text{GMAR}_{t-5}}{\text{GMAR}_{t-5}}$ | การเติบโตของกำไรขั้นต้น |
+
+สูตรการคำนวณ:
+
+$$\Delta\text{GPOA} = \frac{\text{GPOA}_{t} - \text{GPOA}_{t-5}}{\text{GPOA}_{t-5}}$$
+
+$$\Delta\text{ROE} = \frac{\text{ROE}_{t} - \text{ROE}_{t-5}}{\text{ROE}_{t-5}}$$
+
+$$\Delta\text{ROA} = \frac{\text{ROA}_{t} - \text{ROA}_{t-5}}{\text{ROA}_{t-5}}$$
+
+$$\Delta\text{CFOA} = \frac{\text{CFOA}_{t} - \text{CFOA}_{t-5}}{\text{CFOA}_{t-5}}$$
+
+$$\Delta\text{GMAR} = \frac{\text{GMAR}_{t} - \text{GMAR}_{t-5}}{\text{GMAR}_{t-5}}$$
+
+| ตัวชี้วัด | ความหมาย |
+|----------|---------|
+| **ΔGPOA** | การเติบโตของ Gross Profit Margin โดยวัดจากการเปลี่ยนแปลงใน 5 ปี |
+| **ΔROE** | การเติบโตของผลตอบแทนทุน แสดงให้เห็นว่าเจ้าของเกิดประโยชน์มากขึ้นหรือน้อยลง |
+| **ΔROA** | การเติบโตของผลตอบแทนสินทรัพย์ แสดงว่าบริษัทใช้สินทรัพย์อย่างมีประสิทธิภาพมากขึ้นหรือไม่ |
+| **ΔCFOA** | การเติบโตของกระแสเงินสด แสดงว่าบริษัทสร้างเงินสดจริงได้มากขึ้นหรือน้อยลง ซึ่งสำคัญมากสำหรับความยั่งยืน |
+| **ΔGMAR** | การเติบโตของกำไรขั้นต้น แสดงว่าบริษัทสามารถรักษากำไรขั้นต้นไว้หรือเพิ่มขึ้น |
+
 
 ![growth Score](assets/growth_A_diverging.png)
 *Figure 7: ค่าเฉลี่ย z-score ของตัวชี้วัดด้าน Growth (การเปลี่ยนแปลงระยะ 3 ปี) แสดงให้เห็นว่า Quality มีค่าการเติบโตสูงกว่า Junk อย่างสม่ำเสมอในทุก metric โดยมี Q–J Spread เป็นบวกในทุกตัวชี้วัด*
