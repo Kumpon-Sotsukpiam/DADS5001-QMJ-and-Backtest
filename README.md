@@ -75,7 +75,26 @@
 - [x] Support Multi Strategies
 - [x] Support Multi Lookbacks
 - [x] Support Multi Rebalances
+- [ ] Robust optimization parameter stable
  
+---
+
+
+## Statistical Testing
+
+- [ ] t-test: Quality vs Junk per component (Score_Profit, Score_Safety, Score_Growth, QMJ_Score)
+- [ ] Bootstrap Confidence Interval ของ Q−J Spread
+- [ ] p-value summary table per component
+- [ ] Effect size (Cohen's d)
+
+--- 
+
+## Future Improvements
+
+- [ ] Extend universe to SET50 / SET100 (Thailand)
+- [ ] Extend universe to CSI 300 / SSE 50 (China)
+- [ ] Extend universe to DAX 40 (Germany)
+
 ---
  
 ## Introduction
@@ -86,6 +105,12 @@
 ## Data Source
 
 ชุดข้อมูลพื้นฐาน (Fundamental Data) ประกอบด้วยข้อมูลจากงบกำไรขาดทุน (Income Statement), งบแสดงฐานะการเงิน (Balance Sheet) และงบกระแสเงินสด (Cash Flow) ของบริษัทจดทะเบียนในสหรัฐอเมริกา (US Listed Companies) ควบคู่กับข้อมูลราคาหุ้นรายวัน (Daily Price Data) และข้อมูล S&P 500 Historical Components & Changes
+
+| Dataset | Source |
+|---------|--------|
+| Financial Statements (Income Statement · Balance Sheet · Cash Flow) | [SimFin — US Companies](https://simfin.com/) |
+| Share Prices (Daily Adjusted Close) | [SimFin — US Share Prices](https://simfin.com/) · [Yahoo Finance](https://finance.yahoo.com/) |
+| S&P 500 Historical Components & Changes | [GitHub — fja05680/sp500](https://github.com/fja05680/sp500) |
 
 ## Data Filtering & Processing
 
