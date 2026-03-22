@@ -91,9 +91,10 @@
 
 ## Future Improvements
 
-- [ ] Extend universe to SET50 / SET100 (Thailand)
+- [x] Extend universe to S&P 500 (US)
 - [ ] Extend universe to CSI 300 / SSE 50 (China)
 - [ ] Extend universe to DAX 40 (Germany)
+- [ ] Extend universe to SET50 / SET100 (Thailand)
 
 ---
  
